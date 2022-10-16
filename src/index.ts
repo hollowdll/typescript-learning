@@ -44,9 +44,30 @@ const createTypeScriptArray = () => {
 }
 // createTypeScriptArray();
 
+const genericArrayExample = () => {
+    let myGenericArray: Array<number> = [1,2,3];
+
+    myGenericArray.forEach(n => console.log(n));
+}
+// genericArrayExample();
+
 
 /* Tuples */
 
+const tupleExample = () => {
+    console.log("Executing function 'tupleExample'");
+
+    // age, name, height
+    let person: [number, string, number] = [69, "Boomer", 200];
+    
+    // key value pair
+    let keyValuePair: [string, number];
+
+    for (const e of person) {
+        console.log("Value: ", e);
+    }
+}
+tupleExample();
 
 
 /* Enums */
