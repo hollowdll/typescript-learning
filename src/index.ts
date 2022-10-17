@@ -57,6 +57,8 @@ const genericArrayExample = () => {
 const tupleExample = () => {
     console.log("Executing function 'tupleExample'");
 
+    /* Tuples are fixed size arrays where each element has a specific data type */
+
     // age, name, height
     let person: [number, string, number] = [69, "Boomer", 200];
     
@@ -67,10 +69,24 @@ const tupleExample = () => {
         console.log("Value: ", e);
     }
 }
-tupleExample();
+// tupleExample();
 
 
 /* Enums */
 
+const enumExample = () => {
+    console.log("Executing function 'enumExample'");
 
+    /* Enum is a list of constants */
 
+    // Use PascalCase for enums
+    const enum Month { January, February, March };
+    
+    let myMonth: Month = Month.March;
+    console.log(myMonth);   // Prints 2
+
+    const enum MyEnum { Value1 = "one", Value2 = "two", Value3 = "three" };
+}
+// enumExample();
+
+/* Practice spread operator */
