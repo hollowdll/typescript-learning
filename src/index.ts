@@ -89,4 +89,27 @@ const enumExample = () => {
 }
 // enumExample();
 
+
+/* Functions */
+
+function typeScriptFunction1(example: number): number {
+    return 0;
+}
+
+const typeScriptFunction2 = (example1: string, example2: number = 69): boolean => {
+    console.log("Executing function 'typeScriptFunction2'");
+
+    let option: boolean = false;
+
+    if (example1 == "TypeScript") {
+        console.log("TypeScript is better than JavaScript!");
+        option = true;
+    }
+    console.log("Parameter2 has default value of ", example2);
+
+    return option;
+}
+// typeScriptFunction2("TypeScript");
+
+
 /* Practice spread operator */
