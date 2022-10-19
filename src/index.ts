@@ -129,8 +129,55 @@ let typeAliasExample: TypeAlias = {
 }
 
 
+/* Union Type */
+
+function unionTypeExample(myPar: number | string | TypeAlias): void {
+    if (typeof myPar === "number")
+        console.log("Number");
+    else if (typeof myPar === "string")
+        console.log("String");
+    else
+        console.log("TypeAlias");
+    
+}
+// unionTypeExample(5);
+// unionTypeExample("TypeScript");
+
+
+/* Type Intersection */
+
+function typeIntersectionExample() {
+    type Example1 = {
+        myMethod1: () => void
+    }
+
+    type Example2 = {
+        myMethod2: () => void
+    }
+
+    // Type intersection combines 2 types into 1
+    type Combination = Example1 & Example2;
+
+    let combinationObject: Combination = {
+        myMethod1: () => {},
+        myMethod2: () => {}
+    }
+}
+
+
+/* Literal Types */
+
+
+
+/* Nullable Types */
+
+
 
 /* Classes */
+
+
+
+/* Interfaces */
 
 
 
