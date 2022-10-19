@@ -96,7 +96,7 @@ function typeScriptFunction1(example: number): number {
     return 0;
 }
 
-const typeScriptFunction2 = (example1: string, example2: number = 69): boolean => {
+const typeScriptFunction2 = (example1: string = "", example2: number = 69): boolean => {
     console.log("Executing function 'typeScriptFunction2'");
 
     let option: boolean = false;
@@ -110,6 +110,28 @@ const typeScriptFunction2 = (example1: string, example2: number = 69): boolean =
     return option;
 }
 // typeScriptFunction2("TypeScript");
+
+
+/* Objects and Type Aliases */
+
+type TypeAlias = {
+    readonly myNumber: number,
+    myString: string,
+    myFunction: (parExample: boolean) => void
+}
+
+let typeAliasExample: TypeAlias = {
+    myNumber: 69,
+    myString: "Example",
+    myFunction: (parExample: boolean) => {
+        console.log("Nothing ", parExample);
+    }
+}
+
+
+
+/* Classes */
+
 
 
 /* Practice spread operator */
