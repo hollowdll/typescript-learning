@@ -167,10 +167,27 @@ function typeIntersectionExample() {
 
 /* Literal Types */
 
+function literalTypeExample() {
+    // Literal types have exact and specific values
+
+    type literalType1 = 1 | 2 | 3;
+    type literalType2 = '1' | '2' | 3 | "Four";
+    
+    let example1: literalType2 = 3;
+    let example2: literalType2 = "Four";
+}
 
 
 /* Nullable Types */
 
+function nullableTypeExample(myPar: number | null | undefined) {
+    if (typeof myPar === "number")
+        console.log("Value: ", myPar)
+    else
+        console.log(myPar);
+    
+}
+// nullableTypeExample(null);
 
 
 /* Classes */
