@@ -190,12 +190,13 @@ function nullableTypeExample(myPar: number | null | undefined) {
 // nullableTypeExample(null);
 
 
-/* Classes */
-
-
 
 /* Interfaces */
 
 
 
 /* Practice spread operator */
+
+
+/* Practice optional properties and parameters */
+// Example: myVariable?: string
