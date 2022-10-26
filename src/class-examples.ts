@@ -1,6 +1,7 @@
 /* TypeScript class practice */
 
 class SimpleClassExample {
+    // TypeScript and JavaScript properties are public by default
     myNumber: number;
 
     constructor() {
@@ -34,3 +35,28 @@ class PrivateFieldClass {
 const pfc = new PrivateFieldClass();
 console.log(pfc.getAge());
 
+
+class MiscellaneousFields {
+    public publicField: boolean;
+    private myNumber: number
+    private myString: string;
+    protected _secret: string;
+
+    constructor(myNumber?: number) {
+        this.publicField = true;
+        this.myNumber = 1;
+        this.myString = "TypeScript";
+        this._secret = "Not telling";
+    }
+
+    get secret(): string {
+        return this._secret;
+    }
+
+    set secret(secret: string) {
+        this._secret = secret;
+    }
+}
+
+const mf = new MiscellaneousFields();
+console.log(mf.secret);
