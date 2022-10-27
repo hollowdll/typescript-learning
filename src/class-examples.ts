@@ -58,5 +58,20 @@ class MiscellaneousFields {
     }
 }
 
+class DerivedClass extends MiscellaneousFields {
+    handleData(data: number | undefined) {
+        console.log(this._secret);
+        const result = data === undefined ? 0 : data;
+        return result;
+    }
+
+    testMethod(other: DerivedClass) {
+        other._secret = "Another secret";
+        console.log(other._secret);
+    }
+}
+
 const mf = new MiscellaneousFields();
 console.log(mf.secret);
+
+const dc = new DerivedClass();
