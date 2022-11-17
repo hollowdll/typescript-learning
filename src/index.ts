@@ -191,10 +191,6 @@ function nullableTypeExample(myPar: number | null | undefined) {
 
 
 
-/* Interfaces */
-
-
-
 /* Practice spread operator */
 
 
